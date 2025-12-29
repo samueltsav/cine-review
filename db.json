@@ -1,0 +1,254 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "year": 1994,
+      "duration": 142,
+      "director": "Frank Darabont",
+      "cast": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton"
+      ],
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Dark Knight",
+      "genre": "Action",
+      "year": 2008,
+      "duration": 152,
+      "director": "Christopher Nolan",
+      "cast": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart"
+      ],
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "director": "Christopher Nolan",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ellen Page"
+      ],
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "genre": "Thriller",
+      "year": 1994,
+      "duration": 154,
+      "director": "Quentin Tarantino",
+      "cast": [
+        "John Travolta",
+        "Uma Thurman",
+        "Samuel L. Jackson"
+      ],
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Forrest Gump",
+      "genre": "Drama",
+      "year": 1994,
+      "duration": 142,
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise"
+      ],
+      "description": "The presidencies of Kennedy and Johnson unfold through the perspective of an Alabama man with an IQ of 75.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Matrix",
+      "genre": "Sci-Fi",
+      "year": 1999,
+      "duration": 136,
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "cast": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss"
+      ],
+      "description": "A computer hacker learns about the true nature of his reality and his role in the war against its controllers.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Goodfellas",
+      "genre": "Thriller",
+      "year": 1990,
+      "duration": 146,
+      "director": "Martin Scorsese",
+      "cast": [
+        "Robert De Niro",
+        "Ray Liotta",
+        "Joe Pesci"
+      ],
+      "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife and his partners in crime.",
+      "image": "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The Silence of the Lambs",
+      "genre": "Horror",
+      "year": 1991,
+      "duration": 118,
+      "director": "Jonathan Demme",
+      "cast": [
+        "Jodie Foster",
+        "Anthony Hopkins",
+        "Scott Glenn"
+      ],
+      "description": "A young FBI cadet must receive the help of an incarcerated cannibal killer to catch another serial killer.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Interstellar",
+      "genre": "Sci-Fi",
+      "year": 2014,
+      "duration": 169,
+      "director": "Christopher Nolan",
+      "cast": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain"
+      ],
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "image": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Green Mile",
+      "genre": "Drama",
+      "year": 1999,
+      "duration": 189,
+      "director": "Frank Darabont",
+      "cast": [
+        "Tom Hanks",
+        "Michael Clarke Duncan",
+        "David Morse"
+      ],
+      "description": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Parasite",
+      "genre": "Thriller",
+      "year": 2019,
+      "duration": 132,
+      "director": "Bong Joon-ho",
+      "cast": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong"
+      ],
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "image": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Spirited Away",
+      "genre": "Animation",
+      "year": 2001,
+      "duration": 125,
+      "director": "Hayao Miyazaki",
+      "cast": [
+        "Rumi Hiiragi",
+        "Miyu Irino",
+        "Mari Natsuki"
+      ],
+      "description": "During her family's move to the suburbs, a girl wanders into a world ruled by gods, witches, and spirits.",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "reviewer": "John Doe",
+      "rating": 5,
+      "comment": "Absolutely masterful storytelling. One of the greatest films ever made!",
+      "createdAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "movieId": 1,
+      "reviewer": "Jane Smith",
+      "rating": 5,
+      "comment": "A timeless classic. The performances are incredible and the story is deeply moving.",
+      "createdAt": "2024-01-20T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "movieId": 2,
+      "reviewer": "Mike Johnson",
+      "rating": 5,
+      "comment": "Heath Ledger's Joker is legendary. Best superhero movie ever!",
+      "createdAt": "2024-01-18T09:15:00Z"
+    },
+    {
+      "id": 4,
+      "movieId": 3,
+      "reviewer": "Sarah Williams",
+      "rating": 5,
+      "comment": "Mind-bending and visually stunning. Nolan at his best!",
+      "createdAt": "2024-01-22T16:20:00Z"
+    },
+    {
+      "id": 5,
+      "movieId": 11,
+      "reviewer": "David Lee",
+      "rating": 5,
+      "comment": "A brilliant social commentary wrapped in a thrilling narrative. Deserved all the awards!",
+      "createdAt": "2024-01-25T11:00:00Z"
+    },
+    {
+      "id": "4519",
+      "movieId": 10,
+      "reviewer": "Leon",
+      "rating": 4,
+      "comment": "nice movie",
+      "createdAt": "2025-12-26T12:07:53.053Z"
+    },
+    {
+      "id": "7d3d",
+      "movieId": 2,
+      "reviewer": "Leon",
+      "rating": 4,
+      "comment": "Nice movie",
+      "createdAt": "2025-12-26T20:31:42.717Z"
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "97cc",
+      "movieId": 2,
+      "addedAt": "2025-12-26T18:57:05.254Z"
+    },
+    {
+      "id": "dec9",
+      "movieId": 3,
+      "addedAt": "2025-12-26T20:33:48.040Z"
+    }
+  ]
+}
