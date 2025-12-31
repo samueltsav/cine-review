@@ -1,0 +1,25 @@
+/* CSS Variables */
+:root {
+    --color-primary: #003d82;
+    --color-secondary: #0066cc;
+}
+
+/* Base CSS */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    font-size: clamp(14px, 1.6vw, 18px);
+    box-sizing: border-box;
+}
