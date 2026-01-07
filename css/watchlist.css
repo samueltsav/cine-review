@@ -23,7 +23,6 @@
     margin-bottom: 2rem;
 }
 
-
 #watchlist-content {
     display: flex;
     gap: 1rem;
@@ -48,6 +47,7 @@
     margin-top: .5rem;
     gap: 1rem;
 }
+
 .details-btn, .remove-btn, .browse-button {
     background-color: var(--primary);
     color: var(--text-primary);
@@ -60,18 +60,14 @@
     font-weight: 600;
 }
 
-#footer {
-    grid-area: 4 / 1 / 5 / -1;
-    color: var(--text-primary);
-}
-
 .empty-state {
-   /* display: none; */
+   /*display: none;*/
    text-align: center;
    margin: auto;
    color: var(--text-secondary);
    padding: 2rem 0;
 }
+
 .sec-text {
     margin-top: 1rem;
     font-weight: 100;
