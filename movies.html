@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/movies.css">
 </head>
 <body>
-    <div id="movies-grid"></div>    
+    
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="navbar__logo">
+            <span class="logo-icon">■</span>
+            <span class="logo-text">CineReview</span>
+        </div>
+
+        <nav class="navbar__links">
+            <a href="index.html">Home</a>
+            <a href="movies.html" class="active">Movies</a>
+            <a href="watchlist.html">My Watchlist</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="movies-hero">
+        <h1>All Movies</h1>
+        <p>Discover and review amazing films</p>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <!-- Search -->
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search movies..." />
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <div class="filter-group">
+                <label>Genre:</label>
+                <select>
+                    <option>All Genres</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Min Rating:</label>
+                <select>
+                    <option>All Ratings</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Sort By:</label>
+                <select>
+                    <option>Default</option>
+                </select>
+            </div>
+
+            <button class="clear-btn">Clear Filters</button>
+        </div>
+    </section>
+
+    <!-- Results Info -->
+    <section class="results-info">
+        <p>Showing 0 movies</p>
+    </section>
+
+    <!-- Empty State -->
+    <section class="empty-state">
+        <div class="empty-icon"></div>
+        <h3>No movies found</h3>
+        <p>Try adjusting your filters or search terms</p>
+    </section>
+    <div id="movies-grid"></div>   
+    
+    <script src="movies.js"></script>
 </body>
 </html>
