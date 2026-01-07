@@ -269,7 +269,7 @@ movie-review-watchlist/
 │   ├──# create CSS files here
 │
 ├── js/
-│   ├──# Lcreate JS files here
+│   ├──# create JS files here
 |
 ├── db.json                   # JSON Server database
 └── README.md                 # This file

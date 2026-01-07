@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Home</title>
-    <link rel="stylesheet" href="./css/base.css">
-</head>
+    <link rel="stylesheet" href="./css/landing_style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Navigation -->
     <nav>
       <a href="https://google.com" class="logo">
         <div class="logo-icon">
-          <img src="../img/box.png" alt="box" sizes="" srcset="" />
+          <img src="/img/box.png" alt="box" sizes="" srcset="" />
         </div>
         <span>CineReview</span>
       </a>
@@ -57,6 +56,54 @@
         </div>
       </div>
     </section>
-</body>
 
+    <!-- Featured Movies Section -->
+    <section id="featured-section">
+      <div class="section-header">
+        <h2>Featured Movies</h2>
+        <p>Trending movies everyone's talking about</p>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-nav prev" onclick="prevSlide()">
+          <img
+            src="/img/arrowLeft.png"
+            alt="arrowLeft"
+            width="17"
+            height="14"
+          />
+        </div>
+
+        <div id="carousel">
+          <div class="loading">Loading top rated movies...</div>
+        </div>
+
+        <div class="carousel-nav next" onclick="nextSlide()">
+          <img
+            src="/img/arrowRight.png"
+            alt="arrowRight"
+            width="17"
+            height="14"
+          />
+        </div>
+
+        <div class="carousel-indicators">
+          <div class="indicator" onclick="goToSlide(0)"></div>
+          <div class="indicator" onclick="goToSlide(1)"></div>
+          <div class="indicator active" onclick="goToSlide(2)"></div>
+          <div class="indicator" onclick="goToSlide(3)"></div>
+          <div class="indicator" onclick="goToSlide(4)"></div>
+        </div>
+      </div>
+      <a href="#all-movies" class="view-all-btn">View All Movies</a>
+    </section>
+
+    <!-- Top Rated Section -->
+    <section class="top-rated-section" id="top-rated">
+
+    </section>
+  </body>
+  <script src="/js/landingScript.js">
+    
+  </script>
 </html>
