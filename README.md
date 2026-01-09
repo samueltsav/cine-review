@@ -32,37 +32,37 @@ By completing this project, you will strengthen your abilities on:
 
 ## 🌟 Features by Page
 
-### 🏠 Landing Page (`index.html`)
+  ### 🏠 Landing Page (`index.html`)
 
-#### Visual Features
-- Hero section with animated background and call-to-action
-- Featured movies carousel (auto-play with manual controls)
-- Top rated movies section with rankings
-- "How It Works" accordion (3 steps)
-- Footer with social links and quick navigation
+  #### Visual Features
+  - Hero section with animated background and call-to-action
+  - Featured movies carousel (auto-play with manual controls)
+  - Top rated movies section with rankings
+  - "How It Works" accordion (3 steps)
+  - Footer with social links and quick navigation
 
-#### Implementation Checklist
-- [ ] Load and display 5 featured movies in carousel
-- [ ] Implement working carousel with auto-play and pagination dots
-- [ ] Display top 3 rated movies with rankings
-- [ ] Create functional accordion (one section open at a time)
-- [ ] Calculate average ratings from reviews
-- [ ] Add smooth scroll to section links
-- [ ] Handle carousel pause on hover
+  #### Implementation Checklist
+  - [ ] Load and display 5 featured movies in carousel
+  - [ ] Implement working carousel with auto-play and pagination dots
+  - [ ] Display top 3 rated movies with rankings
+  - [ ] Create functional accordion (one section open at a time)
+  - [ ] Calculate average ratings from reviews
+  - [ ] Add smooth scroll to section links
+  - [ ] Handle carousel pause on hover
 
-### 🎬 Movies Page (`movies.html`)
+  ### 🎬 Movies Page (`movies.html`)
 
-#### Visual Features
-- Search bar for real-time filtering
-- Multiple filter controls (Genre, Min Rating)
-- Sort options (Rating, Year, Title)
-- Movie grid with poster images
-- Movie detail modal with full information
-- Review submission modal with star rating
-- Watchlist add/remove functionality
-- Empty state when no movies found
-- Loading spinner during data fetch
-- Toast notifications for actions
+  #### Visual Features
+  - Search bar for real-time filtering
+  - Multiple filter controls (Genre, Min Rating)
+  - Sort options (Rating, Year, Title)
+  - Movie grid with poster images
+  - Movie detail modal with full information
+  - Review submission modal with star rating
+  - Watchlist add/remove functionality
+  - Empty state when no movies found
+  - Loading spinner during data fetch
+  - Toast notifications for actions
 
 #### API Endpoints Used
 - `GET /movies` - Fetch all movies
@@ -269,7 +269,7 @@ movie-review-watchlist/
 │   ├──# create CSS files here
 │
 ├── js/
-│   ├──# Lcreate JS files here
+│   ├──# create JS files here
 |
 ├── db.json                   # JSON Server database
 └── README.md                 # This file

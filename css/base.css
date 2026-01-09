@@ -1,3 +1,6 @@
+/* Base CSS for CineReview */
+/* Core styles can be imported or extended here */
+@import url('./landing_style.css');
 /* CSS Variables */
 :root {
     --primary: #DC2626;  /* Main red - buttons, accents */
