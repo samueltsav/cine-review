@@ -9,17 +9,17 @@
   --primary-dark: #b91c1c; /* Hover states */
   --primary-light: #ef4444; /* Light accents */
 
-  /* #### Background Colors */
+  /* # Background Colors */
   --background: #111827; /* Page background */
   --surface: #1f2937; /* Card backgrounds */
   --surface-light: #374151; /* Elevated surfaces */
 
-  /* #### Text Colors */
+  /* #Text Colors */
   --text-primary: #f9fafb; /* Main text */
   --text-secondary: #d1d5db; /* Secondary text */
   --text-tertiary: #9ca3af; /* Subtle text */
 
-  /* #### Status Colors */
+  /* # Status Colors */
   --success: #10b981; /* Success messages */
   --error: #ef4444; /* Error messages */
   --warning: #f59e0b; /* Warning messages */
