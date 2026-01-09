@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Home</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!-- css -->
     <link rel="stylesheet" href="./css/landing_style.css" />
+    <!-- fontawesome libary  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -30,7 +34,7 @@
   <body>
     <!-- Navigation -->
     <nav>
-      <a href="https://google.com" class="logo">
+      <a href="/" class="logo">
         <div class="logo-icon">
           <img src="/img/box.png" alt="box" sizes="" srcset="" />
         </div>
@@ -42,7 +46,7 @@
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#watchlist">My Watchlist</a></li>
       </ul>
-      <a href="#featured-section" class="browse-btn">Browse Movies</a>
+      <a href="/movies.html" class="browse-btn">Browse Movies</a>
     </nav>
 
     <!-- Hero Section -->
@@ -119,198 +123,155 @@
     </section>
 
     <!-- Top Rated Section -->
-<section class="top-rated-section" id="top-rated">
-<div class="section-header">
-<h2>Top Rated Movies</h2>
-<p>Highest rated films by our community</p>
-</div>
- 
-      <div class="top-movies-grid">
-<!-- use this also  -->
-<div class="top-movie-card">
-<div class="rank-badge">1</div>
- 
-          <!-- Use this  -->
-<div class="top-movie-info">
-<img
-              src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=100&h=130&fit=crop"
-              alt="Inception"
-              class="top-movie-poster"
-            />
- 
-            <div>
-<span><h3>Inception</h3></span>
-<div class="rating-stars">
-<span class="stars">★★★★★</span>
-<span class="rating-value">5.0</span>
-</div>
-</div>
-</div>
-</div>
- 
-        <div class="top-movie-card">
-<div class="rank-badge">2</div>
-<img
-            src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=120&h=180&fit=crop"
-            alt="Parasite"
-            class="top-movie-poster"
-          />
-<div class="top-movie-info">
-<h3>Parasite</h3>
-<div class="rating-stars">
-<span class="stars">★★★★★</span>
-<span class="rating-value">5.0</span>
-</div>
-</div>
-</div>
- 
-        <div class="top-movie-card">
-<div class="rank-badge">3</div>
-<img
-            src="https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=120&h=180&fit=crop"
-            alt="The Dark Knight"
-            class="top-movie-poster"
-          />
-<div class="top-movie-info">
-<h3>The Dark Knight</h3>
-<div class="rating-stars">
-<span class="stars">★★★★★</span>
-<span class="rating-value">4.5</span>
-</div>
-</div>
-</div>
-</div>
-</section>
- 
+    <section class="top-rated-section" id="top-rated">
+      <div class="section-header">
+        <h2>Top Rated Movies</h2>
+        <p>Highest rated films by our community</p>
+      </div>
+
+      <div id="top-movies-grid">
+        <div class="loading">Loading top rated movies...</div>
+      </div>
+    </section>
+
     <!-- How It Works Section -->
-<section class="how-it-works-section" id="how-it-works">
-<div class="section-header">
-<h2>How It Works</h2>
-<p>Start your movie journey in three simple steps</p>
-</div>
- 
+    <section class="how-it-works-section" id="how-it-works">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Start your movie journey in three simple steps</p>
+      </div>
+
       <div class="accordion">
-<div class="accordion-item">
-<div class="accordion-header" onclick="toggleAccordion(0)">
-<span class="accordion-number">01</span>
-<img src="../img/searchIcon.png" alt="searchIcon" />
-<span class="accordion-title">Browse & Discover Movies</span>
-<img src="../img/arrowDown.png" class="accordion-chevron" />
-</div>
-<div class="accordion-content">
-<p>
-              Explore our vast collection of movies across all genres. Use our
-              advanced filters to find exactly what you're looking for, or
-              discover hidden gems through our personalized recommendations
-              based on your viewing history and preferences.
-</p>
-</div>
-</div>
- 
         <div class="accordion-item">
-<div class="accordion-header" onclick="toggleAccordion(1)">
-<span class="accordion-number">02</span>
-<img src="../img/reviewsIcon.png" alt="reviewsIcon" />
-<span class="accordion-title">Write Reviews</span>
-<img src="../img/arrowDown.png" class="accordion-chevron" />
-</div>
-<div class="accordion-content">
-<p>
+          <div class="accordion-header" onclick="toggleAccordion(0)">
+            <span class="accordion-number">01</span>
+            <img src="../img/searchIcon.png" alt="searchIcon" />
+            <span class="accordion-title">Browse & Discover Movies</span>
+            <img src="../img/arrowDown.png" class="accordion-chevron" />
+          </div>
+          <div class="accordion-content">
+            <p>
+              Explore our extensive movie database with powerful search and filtering options. find moveis by genre, release year, or rating.
+              Click on any movie card to see detail infomation including synopsis, cast, director, and community reviews.
+
+              <br>
+              ✔️Search by movie title <br>
+              ✔️filter by genre and rating <br>
+              ✔️Sort by rating or release year <br>
+              ✔️View detailed movie information <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(1)">
+            <span class="accordion-number">02</span>
+            <img src="../img/reviewsIcon.png" alt="reviewsIcon" />
+            <span class="accordion-title">Write Reviews</span>
+            <img src="../img/arrowDown.png" class="accordion-chevron" />
+          </div>
+          <div class="accordion-content">
+            <p>
               Share your thoughts and opinions with our community. Rate movies,
-              write detailed reviews, and help other movie lovers make informed
-              decisions about what to watch next. Your voice matters in shaping
-              our community's recommendations.
-</p>
-</div>
-</div>
- 
+              write detailed reviews about your viewing experience. Help other discover great film and avoid disappoing ones.
+              <br>
+              ✔️Rate movies from 1-5 stars <br>
+              ✔️Write detailed review comments <br>
+              ✔️View all reviews from the community <br>
+              ✔️See averge ratings
+            </p>
+          </div>
+        </div>
+
         <div class="accordion-item">
-<div class="accordion-header" onclick="toggleAccordion(2)">
-<span class="accordion-number">03</span>
-<img src="../img/bookmarkIcon.png" alt="BookmarkIcon" />
-<span class="accordion-title">Build Your Watchlist</span>
-<img src="../img/arrowDown.png" class="accordion-chevron" />
-</div>
-<div class="accordion-content">
-<p>
-              Create and manage your personal watchlist to keep track of movies
-              you want to see. Organize them by priority, genre, or mood, and
-              never forget about that film everyone's been recommending. Your
-              watchlist syncs across all devices.
-</p>
-</div>
-</div>
-</div>
-</section>
- 
+          <div class="accordion-header" onclick="toggleAccordion(2)">
+            <span class="accordion-number">03</span>
+            <img src="../img/bookmarkIcon.png" alt="BookmarkIcon" />
+            <span class="accordion-title">Build Your Watchlist</span>
+            <img src="../img/arrowDown.png" class="accordion-chevron" />
+          </div>
+          <div class="accordion-content">
+            <p>
+              Keep track of movies you want to watch by adding them to your personal watchlist. Never forget about that movie your friend 
+              recommended! Access your watchlist anytime and remove movies after you've watched them.
+              <br>
+              ✔️Save movies to watch later <br>
+              ✔️Organized watchlist page <br>
+              ✔️Quick add/remove functionality <br>
+              ✔️See when you added each movie <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
-<section class="cta-section">
-<h2>Ready to Start Your Movie Journey?</h2>
-<p>Join our community and discover your next favorite film today</p>
-<a href="#browse" class="cta-btn">
+    <section class="cta-section">
+      <h2>Ready to Start Your Movie Journey?</h2>
+      <p>Join our community and discover your next favorite film today</p>
+      <a href="/movies.html" class="cta-btn">
         Browse Movies Now
-<span>→</span>
-</a>
-</section>
- 
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+
     <!-- Footer -->
-<footer>
-<div class="footer-content">
-<div class="footer-brand">
-<a href="https://google.com" class="logo">
-<div class="logo-icon">
-<img src="../img/box.png" alt="box" sizes="" srcset="" />
-</div>
-<span>CineReview</span>
-</a>
-<p>Your ultimate movie review and watchlist platform.</p>
-</div>
- 
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <div class="logo-icon">
+              <img src="../img/box.png" alt="box" sizes="" srcset="" />
+            </div>
+            <span>CineReview</span>
+          </a>
+          <p>Your ultimate movie review and watchlist <br> platform.</p>
+        </div>
+
         <div class="footer-section">
-<h4>Quick Links</h4>
-<ul class="footer-links">
-<li><a href="#browse">Browse Movies</a></li>
-<li><a href="#watchlist">My Watchlist</a></li>
-<li><a href="#top-rated">Top Rated</a></li>
-<li><a href="#features">Features</a></li>
-</ul>
-</div>
- 
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/movies.html">Browse Movies</a></li>
+            <li><a href="/watchlist.html">My Watchlist</a></li>
+            <li><a href="#top-rated">Top Rated</a></li>
+            <li><a href="#featured-section">Features</a></li>
+          </ul>
+        </div>
+
         <div class="footer-section">
-<h4>Categories</h4>
-<ul class="footer-links">
-<li><a href="#action">Action</a></li>
-<li><a href="#comedy">Comedy</a></li>
-<li><a href="#drama">Drama</a></li>
-<li><a href="#scifi">Sci-Fi</a></li>
-</ul>
-</div>
- 
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#action">Action</a></li>
+            <li><a href="#comedy">Comedy</a></li>
+            <li><a href="#drama">Drama</a></li>
+            <li><a href="#scifi">Sci-Fi</a></li>
+          </ul>
+        </div>
+
         <div class="footer-section">
-<h4>Connect</h4>
-<div class="social-links">
-<a href="#" class="social-link"
-><i class="fa-brands fa-facebook-f"></i
-></a>
-<a href="#" class="social-link"
-><i class="fa-brands fa-twitter"></i
-></a>
-<a href="#" class="social-link"
-><i class="fa-brands fa-instagram"></i
-></a>
-<a href="#" class="social-link"
-><i class="fa-brands fa-youtube"></i
-></a>
-</div>
-</div>
-</div>
- 
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-<p>&copy; 2026 CineReview. All rights reserved.</p>
-</div>
-</footer>   
+        <p>&copy; 2026 CineReview. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
-  <script src="/js/landingScript.js">
-    
-  </script>
+
+  <script src="/js/landingScript.js"></script>
 </html>
