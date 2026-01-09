@@ -1,0 +1,197 @@
+   
+   /* Page background */
+body {
+    background: linear-gradient(
+        180deg,
+        var(--background) 0%,
+        #0b1220 100%
+    );
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+
+   /* Navbar */
+.navbar {
+    background-color: var(--surface);
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.logo-icon {
+    color: var(--primary);
+}
+
+.navbar__links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.navbar__links a.active {
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.2rem;
+}
+
+/* Hero Section */
+.movies-hero {
+    text-align: center;
+    padding: 4rem 1rem 2.5rem;
+}
+
+.movies-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.movies-hero p {
+    color: var(--text-secondary);
+}
+
+/* =========================
+   Filters Section
+========================= */
+.filters {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+/* Search */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-icon {
+    margin-right: 0.5rem;
+    color: var(--text-tertiary);
+}
+
+.search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    width: 100%;
+}
+
+/* Filter Controls */
+.filter-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 1rem;
+    align-items: end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.filter-group label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.filter-group select {
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+/* Clear Button */
+.clear-btn {
+    background-color: var(--surface-light);
+    border: none;
+    color: var(--text-primary);
+    padding: 0.55rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color: var(--border);
+}
+
+/* Results Info */
+.results-info {
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--text-secondary);
+}
+
+.empty-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    opacity: 0.7;
+}
+
+.empty-state h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+    
+    
+    
+    
+    
+    
+    /* header {
+    background-color: var(--surface);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text-primary);
+    
+}
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-container{
+    margin-right: 2rem;
+    
+} */
