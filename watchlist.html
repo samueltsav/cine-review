@@ -5,23 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchlist</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/landing_style.css" />
+    <!-- fontawesome libary  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+        integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js"
+        integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="css/watchlist.css">
     <script src="js/watchlist.js" defer></script>
+    <script src="js/partials.js" defer></script>
 </head>
 
 <body>
     <div id="watchlist-grid">
+        <nav id="navbar"></nav>
         <header id="watchlist-header">
-            <h1 id="watchlist-heading">
-                My Watchlist
-            </h1>
-            <p id="watchlist-description">
-                Movies you want to watch
-            </p>
+            <div id="watchlist-loading"></div>
+            <div id="watchlist-loaded">
+                <h2 class="watchlist-headng">Your Watchlist</h2>
+                <p class="watchlist-description">Movies you want to watch</p>
+            </div>
+            <div id="watchlist-empty">
+                <h2 class="watchlist-headng">Your Watchlist is Empty!</h2>
+                <p class=watchlist-description>Start adding movies you want to watch.</p>
+                <button class="browse-movies--btn" onclick="window.location.href='movies.html'">Browse Movies</button>
+            </div>
         </header>
-        <main id="watchlist-content">
-
-        </main>
+        <main id="watchlist-content"></main>
+        <footer id="footer"></footer>
     </div>
 </body>
 
