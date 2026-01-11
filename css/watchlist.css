@@ -14,13 +14,15 @@
     align-items: center;
 }
 
-#watchlist-heading {
+.watchlist-heading {
     color: var(--text-primary);
+    font-weight: 700;
 }
 
-#watchlist-description {
+.watchlist-description {
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
 }
 
 #watchlist-content {
@@ -49,7 +51,9 @@
     gap: 1rem;
 }
 
-.details-btn, .remove-btn, .browse-movies--btn {
+.details-btn,
+.remove-btn,
+.browse-movies--btn {
     background-color: var(--primary);
     color: var(--text-primary);
     border: none;
@@ -61,14 +65,34 @@
     font-weight: 600;
 }
 
-.empty-state {
-   text-align: center;
-   margin: auto;
-   color: var(--text-secondary);
-   padding: 2rem 0;
+#watchlist-loading,
+#watchlist-loaded,
+#watchlist-empty {
+    display: none;
+    text-align: center;
+    margin: auto;
+    color: var(--text-primary);
+    padding: 1rem;
 }
 
-.sec-text {
-    margin-top: 1rem;
-    font-weight: 100;
+#watchlist-loading {
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 4rem;
+    height: 4rem;
+    border: .4rem solid var(--border);
+    border-top: .4rem solid var(--border);
+    border-radius: 50%;
+    animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }

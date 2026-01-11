@@ -1,5 +1,32 @@
+// Helper functions for watchlist states
+function loading() {
+    const loadingContainer = document.getElementById("watchlist-loading");
+    loadingContainer.innerHTML = `
+    <div class="spinner" aria-label="Loading"></div>
+    `;
+    loadingContainer.style.display = "block";
+}
+
+function loadWatchlist() {
+    const loadWatchlistContainer = document.getElementById("watchlist-loaded");
+    loadWatchlistContainer.style.display = "block";
+}
+
+function emptyWatchlist() {
+    const emptyWatchlistContainer = document.getElementById("watchlist-empty");
+    emptyWatchlistContainer.style.display = "block";
+}
+
+function clearLoading() {
+    const container = document.getElementById("watchlist-loading");
+    container.innerHTML = "";
+}
+
+
+
 // Fetch and display watchlist movies
 async function fetchWatchlist() {
+    loading();
     try {
         let response = await fetch(`http://localhost:3000/watchlist`);
         if (!response.ok) {
@@ -10,27 +37,23 @@ async function fetchWatchlist() {
         console.log(data);
     } catch (error) {
         console.error("Fetch error: " + error.message);
+    }finally {
+        clearLoading();
     }
+
 }
 fetchWatchlist();
 
 function displayWatchlist(watchlist) {
-    const watchlisContainer = document.getElementById("watchlist-content");
-    const watchlistHeader = document.getElementById("watchlist-header");
+    const watchlistContainer = document.getElementById("watchlist-content");
 
-    watchlisContainer.innerHTML = "";
+    watchlistContainer.innerHTML = "";
 
     // Empty state
     if (!watchlist || watchlist.length === 0) {
-        watchlistHeader.style.display = "none";
-        watchlisContainer.innerHTML = `
-            <div class="empty-state">
-                <h2>Your watchlist is empty!</h2>
-                <p>Start adding movies you want to watch.</p>
-                 <button class="browse-movies--btn" onclick="window.location.href='movies.html'">Browse Movies</button>
-            </div> 
-        `;
-        return;
+        emptyWatchlist();
+    } else {
+        loadWatchlist();
     }
 
     watchlist.forEach(movie => {
@@ -50,20 +73,20 @@ function displayWatchlist(watchlist) {
             `;
 
         watchlistCard.appendChild(buttonsDiv);
-        watchlisContainer.appendChild(watchlistCard);
+        watchlistContainer.appendChild(watchlistCard);
     });
 }
 
 // Remove movie from watchlist
-async function removeFromWatchlist(movieId) {
+async function removeFromWatchlist(id) {
     try {
-        let response = await fetch(`http://localhost:3000/watchlist/${movieId}`, {
-            method: 'DELETE'
+        let response = await fetch(`http://localhost:3000/watchlist/${id}`, {
+            method: "DELETE"
         });
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        console.log(`Movie with ID ${movieId} removed from watchlist.`);
+        console.log(`Movie with ID ${id} removed from watchlist.`);
         location.reload();
     } catch (error) {
         console.error("Delete error: " + error.message);
