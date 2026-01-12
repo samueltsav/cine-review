@@ -1,0 +1,255 @@
+body.model-open {
+    overflow: hidden;
+}
+
+.model-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.model-overlay.active {
+    display: flex;
+}
+
+.model {
+    width: min(1100px, 96vw);
+    max-height: 92vh;
+    overflow-y: auto;
+    background: #111827;
+    color: #e5e7eb;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    position: relative;
+}
+
+.model__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.25);
+    color: #e5e7eb;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 18px;
+    padding: 18px;
+}
+
+.details__poster {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.details__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.details__title {
+    margin: 0 0 8px 0;
+    font-size: 1.6rem;
+}
+
+.details__meta {
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.details__rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.stars {
+    letter-spacing: 1px;
+}
+
+.details__section-title {
+    margin: 14px 0 6px;
+    font-size: 1rem;
+}
+
+.details__text {
+    opacity: 0.9;
+}
+
+.details__actions {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0 6px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 10px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    color: #e5e7eb;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn--primary {
+    background: #6366f1;
+    border-color: #6366f1;
+}
+
+.btn--primary:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.btn--ghost:hover {
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.btn.is-on {
+    border-color: rgba(16, 185, 129, 0.7);
+    background: rgba(16, 185, 129, 0.15);
+    color: rgb(16, 185, 129);
+}
+
+.details__divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 14px 0;
+}
+
+.pill-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.pill {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* Rating Stars */
+.fa-star,
+.fa-star-half-stroke {
+    color: #facc15;
+    /*gold color*/
+}
+
+.fa-regular.fa-star {
+    color: #555;
+    /*gray color for empty stars*/
+}
+
+.details__rating i {
+    margin-right: 2px;
+}
+
+
+/* small review model */
+.model--small {
+    width: min(560px, 96vw);
+}
+
+.review-model {
+    padding: 18px;
+}
+
+.form {
+    display: grid;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.form__label {
+    display: grid;
+    gap: 6px;
+    opacity: 0.9;
+}
+
+.form__input,
+.form__textarea {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.25);
+    color: #e5e7eb;
+    padding: 10px 12px;
+}
+
+.form__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+.reviews-list {
+    max-height: 260px;
+    overflow: auto;
+    padding-right: 6px;
+}
+
+.review-card {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.review-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.review-name {
+    font-weight: 700;
+}
+
+.review-meta {
+    opacity: 0.7;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+@media (max-width: 860px) {
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .details__poster {
+        height: 360px;
+    }
+}
+
+@media (max-width: 480px) {
+    .details__poster {
+        height: 240px;
+    }
+}

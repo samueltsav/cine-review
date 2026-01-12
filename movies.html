@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/movies.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
-    
+
     <!-- Header / Navbar -->
     <header class="navbar">
         <div class="navbar__logo">
@@ -34,7 +39,7 @@
         <!-- Search -->
         <div class="search-box">
             <span class="search-icon">🔍</span>
-            <input type="text" placeholder="Search movies..." />
+            <input id="search-input" type="text" placeholder="Search movies..." />
         </div>
 
         <!-- Filter Controls -->
@@ -66,17 +71,98 @@
 
     <!-- Results Info -->
     <section class="results-info">
-        <p>Showing 0 movies</p>
+        <p id="results-count">Showing 0 movies</p>
     </section>
 
     <!-- Empty State -->
-    <section class="empty-state">
+    <section class="empty-state" id="empty-state">
         <div class="empty-icon"></div>
         <h3>No movies found</h3>
         <p>Try adjusting your filters or search terms</p>
     </section>
-    <div id="movies-grid"></div>   
-    
+
+    <!-- Movies Grid -->
+    <section id="movies-grid-container">
+        <div id="movies-grid"></div>
+    </section>
+
+    <!--Movie Details Model-->
+    <div id="details-overlay" class="model-overlay" aria-hidden="true">
+        <div id="details-model" class="model" role="dialog" aria-model="true" tabindex="-1">
+            <button id="details-close" class="model__close" aria-label="Close">×</button>
+
+            <div class="details">
+                <img id="details-poster" class="details__poster" alt="" />
+
+                <div class="details__content">
+                    <h2 id="details-title" class="details__title"></h2>
+
+                    <div class="details__meta" id="details-meta"></div>
+
+                    <div class="details__rating">
+                        <span id="details-stars" class="stars"></span>
+                        <span id="details-rating-text" class="rating-text"></span>
+                    </div>
+
+                    <div class="details__actions">
+                        <button id="details-write-review" class="btn btn--primary">Write Review</button>
+                        <button id="details-watchlist" class="btn btn--ghost" aria-pressed="false">Add to
+                            Watchlist</button>
+                    </div>
+
+                    <div class="details__divider"></div>
+
+                    <h3 class="details__section-title">Synopsis</h3>
+                    <p id="details-description" class="details__text"></p>
+
+                    <h3 class="details__section-title">Director</h3>
+                    <p id="details-director" class="details__text"></p>
+
+                    <h3 class="details__section-title">Cast</h3>
+                    <div id="details-cast" class="pill-row"></div>
+
+                    <h3 class="details__section-title">Reviews (<span id="details-review-count">0</span>)</h3>
+                    <div id="details-reviews" class="reviews-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- review model -->
+    <div id="review-overlay" class="model-overlay" aria-hidden="true">
+        <div class="model model--small" role="dialog" aria-model="true" aria-labelledby="review-title" tabindex="-1">
+            <button id="review-close" class="model__close" aria-label="Close">×</button>
+
+            <div class="review-model">
+                <h2 id="review-title" class="details__title">Write a Review</h2>
+
+                <form id="review-form" class="form">
+                    <label class="form__label">
+                        Your name
+                        <input id="reviewer" class="form__input" required />
+                    </label>
+
+                    <label class="form__label">
+                        Rating (1–5)
+                        <input id="rating" class="form__input" type="number" min="1" max="5" value="5" required />
+                    </label>
+
+                    <label class="form__label">
+                        Comment
+                        <textarea id="comment" class="form__textarea" rows="4" required></textarea>
+                    </label>
+
+                    <div class="form__actions">
+                        <button type="button" id="review-cancel" class="btn btn--ghost">Cancel</button>
+                        <button type="submit" class="btn btn--primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="details.js"></script>
     <script src="movies.js"></script>
 </body>
+
 </html>
