@@ -37,7 +37,7 @@ async function fetchWatchlist() {
         console.log(data);
     } catch (error) {
         console.error("Fetch error: " + error.message);
-    }finally {
+    } finally {
         clearLoading();
     }
 
@@ -63,7 +63,7 @@ function displayWatchlist(watchlist) {
         watchlistCard.className = "watchlistCard";
         watchlistCard.innerHTML = `
             <p><strong>ID:</strong> ${movie.id}</p>
-            <p><strong>Title:</strong> ${movie.title}</p>
+            <p><strong>Movie ID:</strong> ${movie.movieId}</p>
             <p><strong>Added At:</strong> ${movie.addedAt}</p>
             `;
 

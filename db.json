@@ -239,9 +239,5 @@
       "createdAt": "2025-12-26T20:31:42.717Z"
     }
   ],
-  "watchlist": [{
-    "id": "1",
-    "title": "Spirited Away",
-    "addedAt": "2024-06-20T12:00:00Z"
-  }]
+  "watchlist": []
 }
