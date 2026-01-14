@@ -5,10 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/movies.css">
     <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/landing_style.css" />
+    <!-- fontawesome libary  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+        integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/fontawesome.min.js"
+        integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/partials.js" defer></script>
 
 </head>
 
@@ -16,16 +31,7 @@
 
     <!-- Header / Navbar -->
     <header class="navbar">
-        <div class="navbar__logo">
-            <span class="logo-icon">■</span>
-            <span class="logo-text">CineReview</span>
-        </div>
-
-        <nav class="navbar__links">
-            <a href="index.html">Home</a>
-            <a href="movies.html" class="active">Movies</a>
-            <a href="watchlist.html">My Watchlist</a>
-        </nav>
+        <nav id="navbar"></nav>
     </header>
 
     <!-- Hero Section -->
@@ -160,6 +166,7 @@
             </div>
         </div>
     </div>
+    <footer id="footer"></footer>
 
     <script src="details.js"></script>
     <script src="./js/movies.js"></script>
