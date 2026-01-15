@@ -5,6 +5,9 @@ const moviesGrid = document.getElementById("movies-grid");
 const resultsCount = document.getElementById("results-count");
 const emptyState = document.getElementById("empty-state");
 const searchInput = document.getElementById("search-input");
+const genreFilter = document.getElementById("genreFilter");
+const ratingFilter = document.getElementById("ratingFilter");
+const clearBtn = document.getElementById("clear-filters");
 
 let allMovies = []; // to store all fetched movies
 let watchlistSet = new Set(); // to store watchlist movie IDs
@@ -24,6 +27,74 @@ async function getMovies() {
     renderMovies([]); // Render empty state on error
   }
 }
+
+function applyFilters() {
+  let filteredMovies = [...allMovies];
+  const selectedGenre = genreFilter.value;
+  const minRating = ratingFilter.value;
+  const sortBy = sortByFilter.value
+
+  // 🎭 Genre filter
+  if (selectedGenre !== "all" && selectedGenre !== "All Genres") {
+    filteredMovies = filteredMovies.filter(movie =>
+      movie.genre.toLowerCase() === selectedGenre.toLowerCase()
+    );
+  }
+
+  // ⭐ Rating filter
+  if (minRating !== "all" && minRating !== "All Ratings") {
+    const ratingValue = Number(minRating);
+    filteredMovies = filteredMovies.filter(movie =>
+      Math.floor(Number(movie.rating)) === ratingValue
+    );
+  }
+
+  // sort  
+  switch (sortBy) {
+    case "rating-high":
+      filteredMovies.sort((a, b) => b.rating - a.rating);
+      break;
+
+    case "rating-low":
+      filteredMovies.sort((a, b) => a.rating - b.rating);
+      break;
+
+    case "year":
+      filteredMovies.sort((a, b) => b.year - a.year); // newest first
+      break;
+
+    case "title":
+      filteredMovies.sort((a, b) =>
+        a.title.localeCompare(b.title)
+      );
+      break;
+
+    default:
+      // no sorting
+      break;
+  }
+
+
+
+  renderMovies(filteredMovies);
+}
+
+genreFilter.addEventListener("change", applyFilters);
+ratingFilter.addEventListener("change", applyFilters);
+sortByFilter.addEventListener("change", applyFilters);
+
+clearBtn.addEventListener("click", () => {
+  searchInput.value = "";
+  genreFilter.value = "all";
+  ratingFilter.value = "All Ratings";
+  sortByFilter.value = "default";
+
+  renderMovies(allMovies);
+});
+
+
+
+
 
 async function loadWatchlist() {
   const res = await fetch(WATCHLIST_URL);
