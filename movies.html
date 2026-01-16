@@ -44,34 +44,48 @@
     <section class="filters">
         <!-- Search -->
         <div class="search-box">
-            <span class="search-icon">🔍</span>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
             <input id="search-input" type="text" placeholder="Search movies..." />
         </div>
 
         <!-- Filter Controls -->
         <div class="filter-controls">
-            <div class="filter-group">
+            <div class="filter-group" >
                 <label>Genre:</label>
-                <select>
-                    <option>All Genres</option>
+                <select id="genreFilter">
+                    <option value="all">All Genres</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Animation">Animation</option>
                 </select>
             </div>
 
             <div class="filter-group">
                 <label>Min Rating:</label>
-                <select>
-                    <option>All Ratings</option>
+                <select id="ratingFilter">
+                    <option value="All Ratings">All Ratings</option>
+                    <option value="1">1+ star</option>
+                    <option value="2">2+ stars</option>
+                    <option value="3">3+ stars</option>
+                    <option value="4">4+ stars</option>
+                    <option value="5">5 stars</option>
                 </select>
             </div>
 
             <div class="filter-group">
                 <label>Sort By:</label>
-                <select>
-                    <option>Default</option>
+                <select id="sortByFilter">
+                    <option value="default">Sort By</option>
+                    <option value="rating-high">Highest Rating</option>
+                    <option value="rating-low">Lowest Rating</option>
+                    <option value="year">Year</option>
+                    <option value="title">Title</option>
                 </select>
             </div>
 
-            <button class="clear-btn">Clear Filters</button>
+            <button class="clear-btn" id="clear-filters">Clear Filters</button>
         </div>
     </section>
 

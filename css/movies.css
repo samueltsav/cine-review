@@ -50,8 +50,9 @@ body {
 }
 
 .search-icon {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     color: var(--text-tertiary);
+    cursor: pointer;
 }
 
 .search-box input {
