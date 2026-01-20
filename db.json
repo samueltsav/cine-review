@@ -237,6 +237,22 @@
       "rating": 4,
       "comment": "Nice movie",
       "createdAt": "2025-12-26T20:31:42.717Z"
+    },
+    {
+      "id": "558f",
+      "movieId": 1,
+      "reviewer": "wisdom",
+      "rating": 5,
+      "comment": "This is a great movie by the way",
+      "createdAt": "2026-01-20T00:28:04.465Z"
+    },
+    {
+      "id": "69e8",
+      "movieId": 1,
+      "reviewer": "sonia",
+      "rating": 4,
+      "comment": "Compared to bourne legacy i would give this a thumbs up",
+      "createdAt": "2026-01-20T00:29:53.305Z"
     }
   ],
   "watchlist": [
@@ -249,6 +265,11 @@
       "id": "4eef",
       "movieId": 4,
       "addedAt": "2026-01-15T14:07:00.154Z"
+    },
+    {
+      "id": "f47d",
+      "movieId": 11,
+      "addedAt": "2026-01-20T00:50:37.955Z"
     }
   ]
 }
