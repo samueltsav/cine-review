@@ -253,22 +253,6 @@
       "rating": 4,
       "comment": "Compared to bourne legacy i would give this a thumbs up",
       "createdAt": "2026-01-20T00:29:53.305Z"
-    },
-    {
-      "id": "d16f",
-      "movieId": 2,
-      "reviewer": "Samuel",
-      "rating": 4,
-      "comment": "Nice movie to Watch!",
-      "createdAt": "2026-01-20T01:16:55.527Z"
-    },
-    {
-      "id": "5478",
-      "movieId": 11,
-      "reviewer": "James Smith",
-      "rating": 5,
-      "comment": "This movie is super cool!",
-      "createdAt": "2026-01-26T21:33:15.659Z"
     }
   ],
   "watchlist": []
