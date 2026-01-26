@@ -93,13 +93,19 @@ async function removeFromWatchlist(id) {
     }
 }
 
-// Event delegation for dynamically created buttons
-document.getElementById("watchlist-content").addEventListener("click", function (event) {
+
+document.getElementById("watchlist-content").addEventListener("click", (event) => {
     if (event.target.classList.contains("remove-btn")) {
         const movieId = event.target.getAttribute("data-id");
         removeFromWatchlist(movieId);
-    } else if (event.target.classList.contains("details-btn")) {
-        const movieId = event.target.getAttribute("data-id");
-        window.location.href = `movies.html?id=${movieId}`;
+    }
+
+    else if (event.target.classList.contains("details-btn")) {
+    
+        const card = event.target.closest(".watchlistCard");
+        const movieIdText = card.querySelector("p:nth-child(2)").textContent;
+        const movieId = Number(movieIdText.split(":")[1].trim());
+
+        window.openMovieDetails(movieId);
     }
 });

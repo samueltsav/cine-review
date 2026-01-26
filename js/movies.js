@@ -75,7 +75,6 @@ function applyFilters() {
   }
 
 
-
   renderMovies(filteredMovies);
 }
 
@@ -91,9 +90,6 @@ clearBtn.addEventListener("click", () => {
 
   renderMovies(allMovies);
 });
-
-
-
 
 
 async function loadWatchlist() {
@@ -174,9 +170,8 @@ window.watchlistStore = {
 function renderMovies(movies) {
   // update "Showing X movies"
   if (resultsCount) {
-    resultsCount.textContent = `Showing ${movies.length} movie${
-      movies.length === 1 ? "" : "s"
-    }`;
+    resultsCount.textContent = `Showing ${movies.length} movie${movies.length === 1 ? "" : "s"
+      }`;
   }
 
   // hide/show empty state
@@ -192,9 +187,8 @@ function renderMovies(movies) {
     const saved = window.watchlistStore.isInWatchlist(movie.id);
 
     card.innerHTML = `
-      <img class="movie-poster" src="${movie.image}" alt="Poster for ${
-      movie.title
-    }" />
+      <img class="movie-poster" src="${movie.image}" alt="Poster for ${movie.title
+      }" />
 
       <div class="movie-info">
         <h3 class="movie-title">${movie.title}</h3>
@@ -202,9 +196,8 @@ function renderMovies(movies) {
         <p class="movie-description">${movie.description}</p>
       
 
-        <button class="watchlist-btn ${saved ? "saved" : ""}" data-id="${
-      movie.id
-    }">
+        <button class="watchlist-btn ${saved ? "saved" : ""}" data-id="${movie.id
+      }">
           ${saved ? "✓ In Watchlist" : "+ Watchlist"}
         </button>
       </div>

@@ -20,6 +20,9 @@
         integrity="sha512-obFNtQ1JKCrxPBPLmYDUevlriATl5EhvwU3CFtdW/HKOkeAe0bbsyZfHO44/f1QyndrZJ464TQvrRP9ZjyXSSA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="css/watchlist.css">
+    <link rel="stylesheet" href="css/details.css">
+    <script type="module" src="js/movies.js" defer></script>
+    <script type="module" src="js/details.js" defer></script>
     <script src="js/watchlist.js" defer></script>
     <script src="js/partials.js" defer></script>
 </head>
@@ -39,7 +42,81 @@
                 <button class="browse-movies--btn" onclick="window.location.href='movies.html'">Browse Movies</button>
             </div>
         </header>
-        <main id="watchlist-content"></main>
+        <main id="watchlist-content"></main><!--Movie Details Model-->
+        <div id="details-overlay" class="model-overlay" aria-hidden="true">
+            <div id="details-model" class="model" role="dialog" aria-model="true" tabindex="-1">
+                <button id="details-close" class="model__close" aria-label="Close">×</button>
+        
+                <div class="details">
+                    <img id="details-poster" class="details__poster" alt="" />
+        
+                    <div class="details__content">
+                        <h2 id="details-title" class="details__title"></h2>
+        
+                        <div class="details__meta" id="details-meta"></div>
+        
+                        <div class="details__rating">
+                            <span id="details-stars" class="stars"></span>
+                            <span id="details-rating-text" class="rating-text"></span>
+                        </div>
+        
+                        <div class="details__actions">
+                            <button id="details-write-review" class="btn btn--primary">Write Review</button>
+                            <button id="details-watchlist" class="btn btn--ghost" aria-pressed="false">Add to
+                                Watchlist</button>
+                        </div>
+        
+                        <div class="details__divider"></div>
+        
+                        <h3 class="details__section-title">Synopsis</h3>
+                        <p id="details-description" class="details__text"></p>
+        
+                        <h3 class="details__section-title">Director</h3>
+                        <p id="details-director" class="details__text"></p>
+        
+                        <h3 class="details__section-title">Cast</h3>
+                        <div id="details-cast" class="pill-row"></div>
+        
+                        <h3 class="details__section-title">Reviews (<span id="details-review-count">0</span>)</h3>
+                        <div id="details-reviews" class="reviews-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- review model -->
+        <div id="review-overlay" class="model-overlay" aria-hidden="true">
+            <div class="model model--small" role="dialog" aria-model="true" aria-labelledby="review-title" tabindex="-1">
+                <button id="review-close" class="model__close" aria-label="Close">×</button>
+        
+                <div class="review-model">
+                    <h2 id="review-title" class="details__title">Write a Review</h2>
+        
+                    <form id="review-form" class="form">
+                        <label class="form__label">
+                            Your name
+                            <input id="reviewer" class="form__input" required />
+                        </label>
+        
+                        <label class="form__label">
+                            Rating (1–5)
+                            <input id="rating" class="form__input" type="number" min="1" max="5" value="5" required />
+                        </label>
+        
+                        <label class="form__label">
+                            Comment
+                            <textarea id="comment" class="form__textarea" rows="4" required></textarea>
+                        </label>
+        
+                        <div class="form__actions">
+                            <button type="button" id="review-cancel" class="btn btn--ghost">Cancel</button>
+                            <button type="submit" class="btn btn--primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <footer id="footer"></footer>
     </div>
 </body>

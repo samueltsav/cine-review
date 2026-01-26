@@ -1,5 +1,6 @@
 const MOVIES_URL = "http://localhost:3000/movies";
 const REVIEWS_URL = "http://localhost:3000/reviews";
+const WATCHLIST_URL = "http://localhost:3000/watchlist";
 
 let currentMovieId = null;
 
@@ -193,6 +194,8 @@ window.addEventListener("watchlist:changed", (e) => {
   }
 });
 
+
+
 // main render function
 async function openMovieDetails(movieId) {
   currentMovieId = Number(movieId);
@@ -249,7 +252,7 @@ async function openMovieDetails(movieId) {
       reviews.length === 0
         ? 0
         : reviews.reduce((acc, r) => acc + (Number(r.rating) || 0), 0) /
-          reviews.length;
+        reviews.length;
 
     starsElem.innerHTML = stars(avg);
     ratingTextElem.textContent = reviews.length
