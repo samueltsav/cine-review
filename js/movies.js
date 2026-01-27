@@ -1,6 +1,4 @@
 const API_URL = "http://localhost:3000/movies";
-const WATCHLIST_URL = "http://localhost:3000/watchlist";
-
 const moviesGrid = document.getElementById("movies-grid");
 const resultsCount = document.getElementById("results-count");
 const emptyState = document.getElementById("empty-state");
@@ -91,10 +89,6 @@ clearBtn.addEventListener("click", () => {
 
   renderMovies(allMovies);
 });
-
-
-
-
 
 async function loadWatchlist() {
   const res = await fetch(WATCHLIST_URL);

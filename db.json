@@ -255,21 +255,5 @@
       "createdAt": "2026-01-20T00:29:53.305Z"
     }
   ],
-  "watchlist": [
-    {
-      "id": "8fab",
-      "movieId": 10,
-      "addedAt": "2026-01-14T18:07:03.960Z"
-    },
-    {
-      "id": "4eef",
-      "movieId": 4,
-      "addedAt": "2026-01-15T14:07:00.154Z"
-    },
-    {
-      "id": "f47d",
-      "movieId": 11,
-      "addedAt": "2026-01-20T00:50:37.955Z"
-    }
-  ]
+  "watchlist": []
 }
